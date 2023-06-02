@@ -77,11 +77,15 @@ def generatett():
         courses=df['Course'].unique().tolist()
         return
 
-print("-------------------\nChoose one of the given options:\n1. Generate Time Table\n2. Exit")
+print("-------------------\nChoose one of the given options:\n1. Generate Time Table\n2. Edit Slot Teachers\n3. Exit")
 menuinput = int(input())
-while menuinput != 2:
-    x=generatett()
-    if x==-1:
-        break
-    print("-------------------\nChoose one of the given options:\n1. Generate Time Table\n2. Exit")
+while menuinput != 3:
+    if menuinput == 1:
+        x=generatett()
+        if x==-1:
+            break
+    if menuinput == 2:
+        print("Enter the slot you want to edit")
+        print("---------------------------------\nWhat do you want to change?")
+    print("-------------------\nChoose one of the given options:\n1. Generate Time Table\n2. Edit Slot Teachers\n3. Exit")
     menuinput = int(input())
