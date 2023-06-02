@@ -56,7 +56,8 @@ def generatett():
     if i==25:
         print("No Time Table Possible")
         return -1
-    else:            
+    else:    
+        selected1 = pd.DataFrame()        
         while (courses):
             first_entry = df_sorted.iloc[0]
             selected1 = pd.concat([selected1, pd.DataFrame([first_entry])], ignore_index=True)
@@ -64,15 +65,15 @@ def generatett():
             courses = df_sorted['Course'].unique().tolist()
 
         print(f"Choice {i}")
-        if (len(selected1)!=7):
-            print(generator())
+        if (len(selected1)==7):
+            print(selected1)
         else:
+            selected1=generator()
             print(selected1)
 
         df = pd.merge(df, selected1, how='left', indicator=True)
         df = df[df['_merge'] == 'left_only'].drop('_merge', axis=1).reset_index(drop=True)
         df_sorted = df.sort_values(by='Rating', ascending=False).reset_index(drop=True)
-        selected1 = pd.DataFrame()
         courses=df['Course'].unique().tolist()
         return
 
