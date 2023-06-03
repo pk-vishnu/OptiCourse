@@ -4,10 +4,9 @@ from flask_login import login_required, current_user
 views = Blueprint('views', __name__)
 
 
-
+selected_choices=[]
 
 @views.route('/')
-
 def home():
     return render_template("home.html",user=current_user)
 
@@ -16,8 +15,8 @@ def home():
 @login_required
 def ffcsgen():
     import pandas as pd
-    df = pd.read_csv('ffcs.csv')
-    df1=pd.read_csv('ffcs.csv')
+    df = pd.read_csv('../ffcs.csv')
+    df1=pd.read_csv('../ffcs.csv')
     courses1=df1['Course'].unique()
     return render_template("ffcsgen.html",user=current_user,courses1=courses1)
 
