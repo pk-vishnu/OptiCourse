@@ -4,11 +4,11 @@
 {% block content %}
 
 <main id="main">
-	<br><br><br>
+	<br><br><br>	<br><br><br>
 	<div class="row justify-content-center">
 		<div class="col-lg-12 text-center">
 		  <h2>FFCS Generator v2.0</h2>
-		  <p>loading...</p>
+		  <p>Cooking Your Time Table...</p>
 		</div>
 		<br><br><br>
 <!--
@@ -38,14 +38,45 @@
         </div>
     </div>
 -->
-	<form action="/course" method="POST">
-		{% for item in courses1 %}
-		<label>
-			<input type="checkbox" name="selected_choices" value="{{ item }}"> {{ item }}
-		</label><br>
-		{% endfor %}
-		<button type="submit">Submit</button>
-	</form>
-	<br><br><br>	<br><br><br>
-  </main>
+<form action="/course" method="POST">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card">
+					<h4 class="card-title">Choose Your Courses</h4>
+					<div class="card-body">
+					{% for item in courses1 %}
+						<div class="form-check checkbox-group">
+							<input type="checkbox"  class="form-check-input" name="selected_choices" value="{{ item }}" id="flexCheckDefault"/>
+							<label label class="form-check-label" for="flexCheckDefault"> {{ item }} </label>
+						</div>
+						{% endfor %}
+						<br>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<style>
+.card {
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 20px;
+}
+.checkbox-group {
+		margin-bottom: 10px;
+	}
+</style>
+</div>
+<br><br><br>
+<br><br><br>
+</main>
+
+
+
+
 {% endblock %}
