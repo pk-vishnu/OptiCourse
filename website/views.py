@@ -33,7 +33,7 @@ def ffcsgen():
 def course():
     global selected_choices
     selected_choices = request.form.getlist('selected_choices')
-    return redirect(url_for('views.time'))
+    return redirect(url_for('views.morning'))
 
 
 @views.route('/time')
@@ -41,7 +41,10 @@ def course():
 def time():
     return render_template("time.html",user=current_user,selected_choices=selected_choices)
 
-@views.route('/morning', methods=['POST'])
+@views.route('/morning')
 @login_required
 def morning():
+
+
+
     return render_template("morning.html",user=current_user,selected_choices=selected_choices)
