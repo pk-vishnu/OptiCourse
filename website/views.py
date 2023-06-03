@@ -1,7 +1,7 @@
 from flask import Flask,Blueprint,render_template,session,request,redirect,url_for,flash
 from flask_login import login_required, current_user
 import pandas as pd
-import csv
+
 
 
 
@@ -48,6 +48,8 @@ def morning():
     df1=pd.read_csv('../ffcs.csv')
     df1=df1[df1['Slot'].str.endswith('1')]
     df1=df1.reset_index(drop=True)
+    df=df1.copy()
+    df = df[df['Course'].isin(selected_choices)]
     df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
@@ -57,9 +59,23 @@ def morning():
 @views.route('/morn_gen',methods=['POST'])
 @login_required
 def morn_gen():
+    global df_sorted
+    df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
+    x=pd.DataFrame()
     x=generatett()
     return render_template("morning.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
+
+
+
+@views.route('/even_gen',methods=['POST'])
+@login_required
+def even_gen():
+    global df_sorted
+    df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
+    x=pd.DataFrame()
+    x=generatett()
+    return render_template("evening.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
 @views.route('/evening',methods=['POST'])
 @login_required
@@ -68,6 +84,9 @@ def evening():
     df1=pd.read_csv('../ffcs.csv')
     df1=df1[df1['Slot'].str.endswith('2')]
     df1=df1.reset_index(drop=True)
+    df=df1.copy()
+    df = df[df['Course'].isin(selected_choices)]
+    df=df.reset_index(drop=True)
     df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
@@ -75,27 +94,45 @@ def evening():
     return render_template("evening.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
 def generatett():
-    global selected1, df_sorted, selected_choices, df, i
+    global selected1, df_sorted, selected_choices, df, i,df1
     sellen=len(selected_choices)
+    selc=selected_choices
     i+=1
     if i==25:
-        return
+        return -9999
     else:    
         selected1 = pd.DataFrame()        
-        while (selected_choices):
+        while (selc):
             first_entry = df_sorted.iloc[0]
             selected1 = pd.concat([selected1, pd.DataFrame([first_entry])], ignore_index=True)
             df_sorted = df_sorted[(df_sorted['Course'] != first_entry['Course']) & (df_sorted['Slot'] != first_entry['Slot'])].reset_index(drop=True)
-            selected_choices = df_sorted['Course'].unique().tolist()
+            selc = df_sorted['Course'].unique().tolist()
 
+        df1 = df1[~df1['Name'].isin(selected1['Name'])].reset_index(drop=True)
+        df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
         if (len(selected1)==sellen):
-            return selected1
-        
+            return selected1    
+        else:
+            selected_entries = []
+            selected_courses = set()
+            selected_slots = set()
+            for _, row in df.iterrows():
+                course = row['Course']
+                slot = row['Slot']    
+                if course not in selected_courses and slot not in selected_slots:
+                    selected_entries.append(row)
+                    selected_courses.add(course)
+                    selected_slots.add(slot)
+                    if len(selected_entries) == 7:
+                        break
+            selected_df = pd.DataFrame(selected_entries)
+            selected_df = selected_df.sample(frac=1).reset_index(drop=True)
+            return selected_df
 
 @views.route('/faculty')
 @login_required
 def faculty():
-    df = pd.read_csv("ffcs.csv")
+    df = pd.read_csv("../ffcs.csv")
     faculty = df["Name"].tolist()
     return render_template("faculty.html",user=current_user,faculty=faculty)
 
@@ -106,9 +143,9 @@ def rating():
         rating = request.form.get('rating')
         faculty_n=request.form.get('faculty_name')
 
-        df = pd.read_csv("ffcs.csv")
+        df = pd.read_csv("../ffcs.csv")
         df.loc[df['Name'] == faculty_n, 'Rating'] = rating
-        df.to_csv("ffcs.csv", index=False)
-    
+        df.to_csv("../ffcs.csv", index=False)
+
         flash('Rating Submitted',category='sucess')
         return redirect("/")
