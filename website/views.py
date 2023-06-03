@@ -63,7 +63,7 @@ def evening():
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
     x=generatett()
-    return render_template("evening.html",user=current_user,x=x)
+    return render_template("evening.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
 def generatett():
     global selected1, df_sorted, selected_choices, df, i

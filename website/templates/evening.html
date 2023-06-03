@@ -1,1 +1,17 @@
-{{x}}
+{% extends "base.html" %}
+{% block title %}FFCSGEN{% endblock %}
+
+{% block content %}
+<br><br><br>	<br><br><br>
+<div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h2>FFCS Generator v2.0</h2>
+      <p>Your Evening Theory Slots have been generated to optimised ratings</p>
+    </div>
+    <br><br>
+    <div class="container mt-4">
+        {{ table | safe }}
+    </div>
+
+
+{% endblock %}
