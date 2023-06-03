@@ -87,6 +87,16 @@ while menuinput != 3:
     if menuinput == 2:
         print("Enter the slot you want to edit")
         print("---------------------------------\nWhat do you want to change?")
-        
+        print(selected1[['Course','Slot','Name']])
+        print("-----------\n What index would you like to change?")
+        index=int(input())
+        filtered_df = df[(df['Course'] == selected1['Course'].values[index]) & (df['Slot'] == selected1['Slot'].values[index])]
+        filtered_df = filtered_df.sample(frac=1).reset_index(drop=True)
+        print(filtered_df[['Course','Slot','Name']])
+        print("-----------\n What teacher would you like to substitute?")
+        index2=int(input())
+        selected1.loc[index] = filtered_df.loc[index2]
+        print(selected1)
+
     print("-------------------\nChoose one of the given options:\n1. Generate Time Table\n2. Edit Slot Teachers\n3. Exit")
     menuinput = int(input())
