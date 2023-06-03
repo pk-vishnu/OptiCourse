@@ -1,241 +1,241 @@
 ﻿Course,Slot,Name,Rating
-Differential Equations,A1,John Smith,4.2
-Differential Equations,A1,Ava Martinez,3.9
-Differential Equations,A1,James Anderson,4.1
-Differential Equations,A1,Olivia Davis,3.8
-Differential Equations,A2,John Smith,4.2
-Differential Equations,A2,Ava Martinez,3.9
-Differential Equations,A2,Olivia Davis,3.8
-Differential Equations,A2,James Anderson,4.1
-Differential Equations,D1,Benjamin Wilson,4.9
-Differential Equations,D1,Ethan Clark,4.3
-Differential Equations,D1,Mia Thomas,3.7
-Differential Equations,D2,Mia Thomas,3.7
-Differential Equations,D2,Ethan Clark,4.3
-Differential Equations,C1,Charlotte Lewis,4.4
-Differential Equations,C1,Alexander Hernandez,3.6
-Differential Equations,C1,Amelia Walker,4.5
-Differential Equations,C2,Charlotte Lewis,4.4
-Differential Equations,C2,Alexander Hernandez,3.6
-Differential Equations,C2,Amelia Walker,4.5
-Differential Equations,E1,Evelyn Rodriguez,3.5
-Differential Equations,E1,Joseph Hill,4.6
-Differential Equations,E1,Abigail Scott,3.4
-Differential Equations,E2,Evelyn Rodriguez,3.5
-Differential Equations,E2,Abigail Scott,3.4
-OOPS,B1,Michael Johnson,4.2
-OOPS,B1,Emily Thomas,3.9
-OOPS,B1,Joseph Hernandez,4.1
-OOPS,B1,Olivia Anderson,3.8
-OOPS,B2,Michael Johnson,4.2
-OOPS,B2,Emily Thomas,3.9
-OOPS,B2,Olivia Anderson,3.8
-OOPS,B2,Joseph Hernandez,4.1
-OOPS,D1,William Martinez,4.9
-OOPS,D1,Alexander Clark,4.3
-OOPS,D1,Sophia Thomas,3.7
-OOPS,D2,Sophia Thomas,3.7
-OOPS,D2,Alexander Clark,4.3
-OOPS,C1,Charlotte Walker,4.4
-OOPS,C1,Aiden Rodriguez,3.6
-OOPS,C1,Ella Lewis,4.5
-OOPS,C2,Charlotte Walker,4.4
-OOPS,C2,Aiden Rodriguez,3.6
-OOPS,C2,Ella Lewis,4.5
-OOPS,E1,James Davis,3.5
-OOPS,E1,Ava Hill,4.6
-OOPS,E1,Liam Moore,3.4
-OOPS,E2,James Davis,3.5
-OOPS,E2,Liam Moore,3.4
-Algorithms,A1,Emma Wilson,4.2
-Algorithms,A1,Oliver Clark,3.9
-Algorithms,A1,Amelia Thomas,4.1
-Algorithms,A1,James Wilson,3.8
-Algorithms,A2,Emma Wilson,4.2
-Algorithms,A2,Oliver Clark,3.9
-Algorithms,A2,James Wilson,3.8
-Algorithms,A2,Amelia Thomas,4.1
-Algorithms,D1,Alexander Davis,4.9
-Algorithms,D1,Sofia Scott,4.3
-Algorithms,D1,Lucas Thomas,3.7
-Algorithms,D2,Lucas Thomas,3.7
-Algorithms,D2,Sofia Scott,4.3
-Algorithms,C1,Emily Anderson,4.4
-Algorithms,C1,Ethan Hernandez,3.6
-Algorithms,C1,Grace Walker,4.5
-Algorithms,C2,Emily Anderson,4.4
-Algorithms,C2,Ethan Hernandez,3.6
-Algorithms,C2,Grace Walker,4.5
-Algorithms,E1,Olivia Martinez,3.5
-Algorithms,E1,Logan Clark,4.6
-Algorithms,E1,David Anderson,3.4
-Algorithms,E2,Olivia Martinez,3.5
-Algorithms,E2,David Anderson,3.4
-Physics,A1,Michael Davis,4.2
-Physics,A1,Sophia Garcia,3.9
-Physics,A1,Ethan Hernandez,4.1
-Physics,A1,Samantha Wilson,3.8
-Physics,A2,Michael Davis,4.2
-Physics,A2,Sophia Garcia,3.9
-Physics,A2,Samantha Wilson,3.8
-Physics,A2,Ethan Hernandez,4.1
-Physics,D1,William Martinez,4.9
-Physics,D1,Oliver Clark,4.3
-Physics,D1,Amelia Thomas,3.7
-Physics,D2,Amelia Thomas,3.7
-Physics,D2,Oliver Clark,4.3
-Physics,C1,Emily Anderson,4.4
-Physics,C1,Ethan Hernandez,3.6
-Physics,C1,Grace Walker,4.5
-Physics,C2,Emily Anderson,4.4
-Physics,C2,Ethan Hernandez,3.6
-Physics,C2,Grace Walker,4.5
-Physics,E1,Olivia Martinez,3.5
-Physics,E1,Logan Clark,4.6
-Physics,E1,David Anderson,3.4
-Physics,E2,Olivia Martinez,3.5
-Physics,E2,David Anderson,3.4
-Calculus,A1,Emma Wilson,4.2
-Calculus,A1,Oliver Clark,3.9
-Calculus,A1,Amelia Thomas,4.1
-Calculus,A1,James Wilson,3.8
-Calculus,A2,Emma Wilson,4.2
-Calculus,A2,Oliver Clark,3.9
-Calculus,A2,James Wilson,3.8
-Calculus,A2,Amelia Thomas,4.1
-Calculus,D1,Alexander Davis,4.9
-Calculus,D1,Sofia Scott,4.3
-Calculus,D1,Lucas Thomas,3.7
-Calculus,D2,Lucas Thomas,3.7
-Calculus,D2,Sofia Scott,4.3
-Calculus,C1,Emily Anderson,4.4
-Calculus,C1,Ethan Hernandez,3.6
-Calculus,C1,Grace Walker,4.5
-Calculus,C2,Emily Anderson,4.4
-Calculus,C2,Ethan Hernandez,3.6
-Calculus,C2,Grace Walker,4.5
-Calculus,E1,Olivia Martinez,3.5
-Calculus,E1,Logan Clark,4.6
-Calculus,E1,David Anderson,3.4
-Calculus,E2,Olivia Martinez,3.5
-Calculus,E2,David Anderson,3.4
-Chemistry,A1,Michael Davis,4.2
-Chemistry,A1,Sophia Garcia,3.9
-Chemistry,A1,Ethan Hernandez,4.1
-Chemistry,A1,Samantha Wilson,3.8
-Chemistry,A2,Michael Davis,4.2
-Chemistry,A2,Sophia Garcia,3.9
-Chemistry,A2,Samantha Wilson,3.8
-Chemistry,A2,Ethan Hernandez,4.1
-Chemistry,D1,William Martinez,4.9
-Chemistry,D1,Oliver Clark,4.3
-Chemistry,D1,Amelia Thomas,3.7
-Chemistry,D2,Amelia Thomas,3.7
-Chemistry,D2,Oliver Clark,4.3
-Chemistry,C1,Emily Anderson,4.4
-Chemistry,C1,Ethan Hernandez,3.6
-Chemistry,C1,Grace Walker,4.5
-Chemistry,C2,Emily Anderson,4.4
-Chemistry,C2,Ethan Hernandez,3.6
-Chemistry,C2,Grace Walker,4.5
-Chemistry,E1,Olivia Martinez,3.5
-Chemistry,E1,Logan Clark,4.6
-Chemistry,E1,David Anderson,3.4
-Chemistry,E2,Olivia Martinez,3.5
-Chemistry,E2,David Anderson,3.4
-Statistics,A1,Emma Wilson,4.2
-Statistics,A1,Oliver Clark,3.9
-Statistics,A1,Amelia Thomas,4.1
-Statistics,A1,James Wilson,3.8
-Statistics,A2,Emma Wilson,4.2
-Statistics,A2,Oliver Clark,3.9
-Statistics,A2,James Wilson,3.8
-Statistics,A2,Amelia Thomas,4.1
-Statistics,D1,Alexander Davis,4.9
-Statistics,D1,Sofia Scott,4.3
-Statistics,D1,Lucas Thomas,3.7
-Statistics,D2,Lucas Thomas,3.7
-Statistics,D2,Sofia Scott,4.3
-Statistics,C1,Emily Anderson,4.4
-Statistics,C1,Ethan Hernandez,3.6
-Statistics,C1,Grace Walker,4.5
-Statistics,C2,Emily Anderson,4.4
-Statistics,C2,Ethan Hernandez,3.6
-Statistics,C2,Grace Walker,4.5
-Statistics,E1,Olivia Martinez,3.5
-Statistics,E1,Logan Clark,4.6
-Statistics,E1,David Anderson,3.4
-Statistics,E2,Olivia Martinez,3.5
-Statistics,E2,David Anderson,3.4
-Course,Slot,Name,Rating
-Differential Equations,F2,John Smith,4.2
-Differential Equations,G2,Ava Martinez,3.9
-Differential Equations,G1,James Anderson,4.1
-Differential Equations,F1,Olivia Davis,3.8
-Differential Equations,F2,Lucas Anderson,4.0
-OOPS,F2,Charlotte Lewis,4.4
-OOPS,G1,Alexander Hernandez,3.6
-OOPS,G2,Amelia Walker,4.5
-OOPS,F1,Evelyn Rodriguez,3.5
-OOPS,G1,Joseph Hill,4.6
-Algorithms,G2,Michael Johnson,4.2
-Algorithms,F1,Emily Thomas,3.9
-Algorithms,G2,Olivia Anderson,3.8
-Algorithms,G1,Joseph Hernandez,4.1
-Algorithms,F2,William Martinez,4.9
-Physics,F2,Charlotte Walker,4.4
-Physics,F1,Aiden Rodriguez,3.6
-Physics,G1,Ella Lewis,4.5
-Physics,F2,James Davis,3.5
-Physics,G2,Ava Hill,4.6
-Calculus,F1,Emma Wilson,4.2
-Calculus,G1,Oliver Clark,3.9
-Calculus,F2,Amelia Thomas,4.1
-Calculus,G1,James Wilson,3.8
-Calculus,G2,Alexander Davis,4.9
-Chemistry,F2,Emily Anderson,4.4
-Chemistry,G1,Ethan Hernandez,3.6
-Chemistry,F1,Grace Walker,4.5
-Chemistry,G2,Olivia Martinez,3.5
-Course,Slot,Name,Rating
-Differential Equations,B1,John Smith,4.2
-Differential Equations,B1,Ava Martinez,3.9
-Differential Equations,B2,James Anderson,4.1
-Differential Equations,B2,Olivia Davis,3.8
-Differential Equations,B2,Lucas Anderson,4.0
-OOPS,B1,Charlotte Lewis,4.4
-OOPS,B1,Alexander Hernandez,3.6
-OOPS,B2,Amelia Walker,4.5
-OOPS,B2,Emily Johnson,4.3
-OOPS,B1,Joshua Martinez,3.9
-Algorithms,B1,Michael Johnson,4.2
-Algorithms,B2,Emily Thomas,3.9
-Algorithms,B1,Olivia Anderson,3.8
-Algorithms,B1,Joseph Hernandez,4.1
-Algorithms,B2,William Martinez,4.9
-Physics,B2,Charlotte Walker,4.4
-Physics,B1,Aiden Rodriguez,3.6
-Physics,B1,Ella Lewis,4.5
-Physics,B2,James Davis,3.5
-Physics,B2,Ava Hill,4.6
-Calculus,B1,Emma Wilson,4.2
-Calculus,B1,Oliver Clark,3.9
-Calculus,B2,Amelia Thomas,4.1
-Calculus,B2,James Wilson,3.8
-Calculus,B1,Alexander Davis,4.9
-Chemistry,B2,Emily Anderson,4.4
-Chemistry,B1,Ethan Hernandez,3.6
-Chemistry,B1,Grace Walker,4.5
-Chemistry,B2,Olivia Martinez,3.5
-Chemistry,B2,Logan Clark,4.6
-Statistics,B2,Michael Davis,4.2
-Statistics,B1,Sophia Garcia,3.9
-Statistics,B1,Ethan Hernandez,4.1
-Statistics,B2,Samantha Wilson,3.8
-Statistics,B2,Oliver Hernandez,4.3
-Chemistry,G2,Logan Clark,4.6
-Statistics,G2,Michael Davis,4.2
-Statistics,F1,Sophia Garcia,3.9
-Statistics,G1,Ethan Hernandez,4.1
-Statistics,F2,Samantha Wilson,3.8
-Statistics,F2,Oliver Hernandez,4.3
+Differential Equations,A1,Aarav Patel,4.2
+Differential Equations,A1,Aisha Sharma,3.9
+Differential Equations,A1,Akash Reddy,4.1
+Differential Equations,A1,Akshay Gupta,3.8
+Differential Equations,A2,Alia Khan,4.2
+Differential Equations,A2,Aman Singh,3.9
+Differential Equations,A2,Aanya Desai,3.8
+Differential Equations,A2,Anika Joshi,4.1
+Differential Equations,D1,Anil Verma,4.9
+Differential Equations,D1,Anita Choudhary,4.3
+Differential Equations,D1,Anjali Bhatia,3.7
+Differential Equations,D2,Ankit Malhotra,3.7
+Differential Equations,D2,Anushka Mehta,4.3
+Differential Equations,C1,Arjun Agrawal,4.4
+Differential Equations,C1,Arpita Kapoor,3.6
+Differential Equations,C1,Ashok Sharma,4.5
+Differential Equations,C2,Ayush Singhania,4.4
+Differential Equations,C2,Bhavya Khanna,3.6
+Differential Equations,C2,Bhuvan Shah,4.5
+Differential Equations,E1,Chetan Shahi,3.5
+Differential Equations,E1,Deepak Saxena,4.6
+Differential Equations,E1,Devika Khurana,3.4
+Differential Equations,E2,Dhruv Shukla,3.5
+Differential Equations,E2,Disha Chopra,3.4
+OOPS,B1,Divya Gupta,4.2
+OOPS,B1,Ekta Rana,3.9
+OOPS,B1,Faizan Khan,4.1
+OOPS,B1,Gaurav Verma,3.8
+OOPS,B2,Gayatri Gupta,4.2
+OOPS,B2,Harshita Bajaj,3.9
+OOPS,B2,Himanshu Agarwal,3.8
+OOPS,B2,Ishaan Patel,4.1
+OOPS,D1,Ishika Chawla,4.9
+OOPS,D1,Jyoti Nair,4.3
+OOPS,D1,Kavya Singh,3.7
+OOPS,D2,Ketan Sharma,3.7
+OOPS,D2,Kirti Suri,4.3
+OOPS,C1,Komal Kapoor,4.4
+OOPS,C1,Kunal Mehta,3.6
+OOPS,C1,Lavanya Gupta,4.5
+OOPS,C2,Madhav Malhotra,4.4
+OOPS,C2,Mala Deshmukh,3.6
+OOPS,C2,Manish Rathi,4.5
+OOPS,E1,Meera Sharma,3.5
+OOPS,E1,Mohan Das,4.6
+OOPS,E1,Mohit Kapoor,3.4
+OOPS,E2,Muskaan Shahi,3.5
+OOPS,E2,Naina Rao,3.4
+Algorithms,A1,Nandini Singh,4.2
+Algorithms,A1,Natasha Sharma,3.9
+Algorithms,A1,Neha Bhatia,4.1
+Algorithms,A1,Nikhil Gupta,3.8
+Algorithms,A2,Nisha Patel,4.2
+Algorithms,A2,Pooja Choudhary,3.9
+Algorithms,A2,Pranav Verma,3.8
+Algorithms,A2,Prisha Kapoor,4.1
+Algorithms,D1,Rajesh Sharma,4.9
+Algorithms,D1,Rajiv Gupta,4.3
+Algorithms,D1,Raman Khanna,3.7
+Algorithms,D2,Rashmi Agarwal,3.7
+Algorithms,D2,Riya Malhotra,4.3
+Algorithms,C1,Rohan Saxena,4.4
+Algorithms,C1,Ruchi Chawla,3.6
+Algorithms,C1,Ritu Nair,4.5
+Algorithms,C2,Sachin Singh,4.4
+Algorithms,C2,Sahil Shah,3.6
+Algorithms,C2,Samaira Patel,4.5
+Algorithms,E1,Sameer Kumar,3.5
+Algorithms,E1,Samridhi Kapoor,4.6
+Algorithms,E1,Sanjana Rao,3.4
+Algorithms,E2,Sarthak Verma,3.5
+Algorithms,E2,Shalini Gupta,3.4
+Physics,A1,Shivam Sharma,4.2
+Physics,A1,Shreya Desai,3.9
+Physics,A1,Shubham Agrawal,4.1
+Physics,A1,Simran Shahi,3.8
+Physics,A2,Suhani Choudhary,4.2
+Physics,A2,Sunil Khurana,3.9
+Physics,A2,Suraj Mehta,3.8
+Physics,A2,Tanvi Bajaj,4.1
+Physics,D1,Tarun Agarwal,4.9
+Physics,D1,Tina Singhania,4.3
+Physics,D1,Tushar Rana,3.7
+Physics,D2,Udayan Verma,3.7
+Physics,D2,Vaibhav Malhotra,4.3
+Physics,C1,Varsha Patel,4.4
+Physics,C1,Vicky Kapoor,3.6
+Physics,C1,Vidya Nair,4.5
+Physics,C2,Vikas Sharma,4.4
+Physics,C2,Vinita Khanna,3.6
+Physics,C2,Vishal Gupta,4.5
+Physics,E1,Yash Shahi,3.5
+Physics,E1,Yuvraj Singh,4.6
+Physics,E1,Zeenat Khan,3.4
+Physics,E2,Zoya Sharma,3.5
+Physics,E2,Aaradhya Chawla,3.4
+Calculus,A1,Aakash Verma,4.2
+Calculus,A1,Aanya Kapoor,3.9
+Calculus,A1,Aditya Malhotra,4.1
+Calculus,A1,Aditi Gupta,3.8
+Calculus,A2,Akshara Nair,4.2
+Calculus,A2,Amaya Khurana,3.9
+Calculus,A2,Amit Sharma,3.8
+Calculus,A2,Amrita Saxena,4.1
+Calculus,D1,Anamika Patel,4.9
+Calculus,D1,Anaya Bhatia,4.3
+Calculus,D1,Aniket Choudhary,3.7
+Calculus,D2,Anisha Rathi,3.7
+Calculus,D2,Anjali Agarwal,4.3
+Calculus,C1,Anshu Singh,4.4
+Calculus,C1,Anushri Kapoor,3.6
+Calculus,C1,Arnav Verma,4.5
+Calculus,C2,Aryan Khanna,4.4
+Calculus,C2,Asha Sharma,3.6
+Calculus,C2,Avani Mehta,4.5
+Calculus,E1,Ayushi Shahi,3.5
+Calculus,E1,Bhavna Rao,4.6
+Calculus,E1,Charu Verma,3.4
+Calculus,E2,Daksh Khanna,3.5
+Calculus,E2,Devansh Gupta,3.4
+Chemistry,A1,Devika Patel,4.2
+Chemistry,A1,Disha Khurana,3.9
+Chemistry,A1,Divyansh Sharma,4.1
+Chemistry,A1,Ekansh Kapoor,3.8
+Chemistry,A2,Esha Singhania,4.2
+Chemistry,A2,Faisal Rana,3.9
+Chemistry,A2,Gauri Bhatia,3.8
+Chemistry,A2,Gopal Deshmukh,4.1
+Chemistry,D1,Hema Nair,4.9
+Chemistry,D1,Ila Patel,4.3
+Chemistry,D1,Ira Choudhary,3.7
+Chemistry,D2,Isha Khanna,3.7
+Chemistry,D2,Ishan Saxena,4.3
+Chemistry,C1,Jaidev Malhotra,4.4
+Chemistry,C1,Jhanvi Shah,3.6
+Chemistry,C1,Kajal Sharma,4.5
+Chemistry,C2,Keshav Khurana,4.4
+Chemistry,C2,Khushi Gupta,3.6
+Chemistry,C2,Krishna Verma,4.5
+Chemistry,E1,Kritika Kapoor,3.5
+Chemistry,E1,Kuldeep Singh,4.6
+Chemistry,E1,Lavina Shahi,3.4
+Chemistry,E2,Madhavi Kapoor,3.5
+Chemistry,E2,Mahi Sharma,3.4
+Statistics,A1,Manan Agarwal,4.2
+Statistics,A1,Manisha Gupta,3.9
+Statistics,A1,Mira Bhatia,4.1
+Statistics,A1,Mohit Rana,3.8
+Statistics,A2,Muskan Saxena,4.2
+Statistics,A2,Nandita Chawla,3.9
+Statistics,A2,Navya Nair,3.8
+Statistics,A2,Neil Patel,4.1
+Statistics,D1,Nidhi Sharma,4.9
+Statistics,D1,Nimisha Khanna,4.3
+Statistics,D1,Palak Malhotra,3.7
+Statistics,D2,Piyush Saxena,3.7
+Statistics,D2,Prabhat Verma,4.3
+Statistics,C1,Pranati Kapoor,4.4
+Statistics,C1,Pratik Shah,3.6
+Statistics,C1,Preeti Nair,4.5
+Statistics,C2,Priya Sharma,4.4
+Statistics,C2,Raghav Khurana,3.6
+Statistics,C2,Rahul Gupta,4.5
+Statistics,E1,Rakesh Sharma,3.5
+Statistics,E1,Ram Kapoor,4.6
+Statistics,E1,Ranbir Patel,3.4
+Statistics,E2,Rashi Verma,3.5
+Statistics,E2,Reena Singh,3.4
+Course,Slot,Ria Shah,Rating
+Differential Equations,F2,Rishabh Malhotra,4.2
+Differential Equations,G2,Ritika Choudhary,3.9
+Differential Equations,G1,Rohit Agarwal,4.1
+Differential Equations,F1,Roshni Nair,3.8
+Differential Equations,F2,Rubina Saxena,4
+OOPS,F2,Sachin Verma,4.4
+OOPS,G1,Sahil Khanna,3.6
+OOPS,G2,Samaira Bhatia,4.5
+OOPS,F1,Sameer Shah,3.5
+OOPS,G1,Samyukta Kapoor,4.6
+Algorithms,G2,Sanjana Verma,4.2
+Algorithms,F1,Sara Patel,3.9
+Algorithms,G2,Sarthak Gupta,3.8
+Algorithms,G1,Shalini Rao,4.1
+Algorithms,F2,Shivangi Sharma,4.9
+Physics,F2,Shreya Verma,4.4
+Physics,F1,Shubham Khurana,3.6
+Physics,G1,Simran Malhotra,4.5
+Physics,F2,Sonal Shahi,3.5
+Physics,G2,Suraj Mehta,4.6
+Calculus,F1,Swati Singhania,4.2
+Calculus,G1,Tanisha Verma,3.9
+Calculus,F2,Tarun Kapoor,4.1
+Calculus,G1,Tina Patel,3.8
+Calculus,G2,Trisha Sharma,4.9
+Chemistry,F2,Ujjwal Nair,4.4
+Chemistry,G1,Utkarsh Gupta,3.6
+Chemistry,F1,Vaishnavi Shah,4.5
+Chemistry,G2,Varun Verma,3.5
+Course,Slot,Vicky Kapoor,Rating
+Differential Equations,B1,Vidushi Nair,4.2
+Differential Equations,B1,Vikrant Sharma,3.9
+Differential Equations,B2,Vinay Khanna,4.1
+Differential Equations,B2,Vishakha Patel,3.8
+Differential Equations,B2,Yashvardhan Singh,4
+OOPS,B1,Zeenat Gupta,4.4
+OOPS,B1,Zara Kapoor,3.6
+OOPS,B2,Aadi Sharma,4.5
+OOPS,B2,Aahana Verma,4.3
+OOPS,B1,Aditi Bhatia,3.9
+Algorithms,B1,Aishani Gupta,4.2
+Algorithms,B2,Akanksha Shahi,3.9
+Algorithms,B1,Akash Singh,3.8
+Algorithms,B1,Akshita Kapoor,4.1
+Algorithms,B2,Amrita Patel,4.9
+Physics,B2,Anahita Khurana,4.4
+Physics,B1,Aniket Saxena,3.6
+Physics,B1,Anisha Verma,4.5
+Physics,B2,Anjana Nair,3.5
+Physics,B2,Ankit Sharma,4.6
+Calculus,B1,Anushka Patel,4.2
+Calculus,B1,Aparna Choudhary,3.9
+Calculus,B2,Aria Malhotra,4.1
+Calculus,B2,Arnav Kapoor,3.8
+Calculus,B1,Arushi Sharma,4.9
+Chemistry,B2,Ashish Verma,4.4
+Chemistry,B1,Avantika Gupta,3.6
+Chemistry,B1,Ayush Khanna,4.5
+Chemistry,B2,Bhavya Rana,3.5
+Chemistry,B2,Bhupendra Shah,4.6
+Statistics,B2,Chahat Sharma,4.2
+Statistics,B1,Daksha Nair,3.9
+Statistics,B1,Devanshi Patel,4.1
+Statistics,B2,Devika Verma,3.8
+Statistics,B2,Disha Singhania,4.3
+Chemistry,G2,Divyanshi Bhatia,4.6
+Statistics,G2,Eesha Khurana,4.2
+Statistics,F1,Eshaan Malhotra,3.9
+Statistics,G1,Faraaz Kapoor,4.1
+Statistics,F2,Gargi Saxena,3.8
+Statistics,F2,Gautam Khanna,4.3
