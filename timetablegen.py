@@ -1,5 +1,4 @@
 import pandas as pd
-import random as rand
 df = pd.read_csv('ffcs.csv')
 df1=pd.read_csv('ffcs.csv')
 courses1=df1['Course'].unique().tolist()
@@ -90,13 +89,13 @@ while menuinput != 3:
         print(selected1[['Course','Slot','Name']])
         print("-----------\n What index would you like to change?")
         index=int(input())
-        filtered_df = df[(df['Course'] == selected1['Course'].values[index]) & (df['Slot'] == selected1['Slot'].values[index])]
+        df5=pd.read_csv('ffcs.csv')
+        filtered_df = df5[(df5['Course'] == selected1['Course'].values[index]) & (df5['Slot'] == selected1['Slot'].values[index])]
         filtered_df = filtered_df.sample(frac=1).reset_index(drop=True)
-        print(filtered_df[['Course','Slot','Name']])
+        print(filtered_df[['Course','Slot','Name','Rating']])
         print("-----------\n What teacher would you like to substitute?")
         index2=int(input())
         selected1.loc[index] = filtered_df.loc[index2]
         print(selected1)
-
     print("-------------------\nChoose one of the given options:\n1. Generate Time Table\n2. Edit Slot Teachers\n3. Exit")
     menuinput = int(input())
