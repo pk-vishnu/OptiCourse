@@ -148,7 +148,11 @@ def rating():
         faculty_n=request.form.get('faculty_name')
 
         df = pd.read_csv("../ffcs.csv")
-        df.loc[df['Name'] == faculty_n, 'Rating'] = rating
+        temprating = df.loc[df['Name'] == faculty_n, 'Rating']
+        count = df.loc[df['Name'] == faculty_n, 'count']
+        finalrating = ((float(temprating)*int(count))+float(rating))/int(count)+1
+        df.loc[df['Name'] == faculty_n, 'Count'] = int(count)+1
+        df.loc[df['Name'] == faculty_n, 'Rating'] = finalrating
         df.to_csv("../ffcs.csv", index=False)
 
         flash('Rating Submitted',category='sucess')
