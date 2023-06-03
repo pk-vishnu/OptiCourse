@@ -15,8 +15,8 @@ def home():
 @login_required
 def ffcsgen():
     import pandas as pd
-    df = pd.read_csv('../ffcs.csv')
-    df1=pd.read_csv('../ffcs.csv')
+    df = pd.read_csv('ffcs.csv')
+    df1=pd.read_csv('ffcs.csv')
     courses1=df1['Course'].unique()
     return render_template("ffcsgen.html",user=current_user,courses1=courses1)
 
