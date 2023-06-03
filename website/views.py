@@ -45,6 +45,7 @@ def time():
 @login_required
 def morning():
     global df1,selected_choices,df_sorted,df,i
+    df1=pd.read_csv('../ffcs.csv')
     df1=df1[df1['Slot'].str.endswith('1')]
     df1=df1.reset_index(drop=True)
     df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
@@ -56,15 +57,31 @@ def morning():
 @views.route('/morn_gen',methods=['POST'])
 @login_required
 def morn_gen():
+    global df_sorted
+    df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     x=pd.DataFrame()
     x=generatett()
     return render_template("morning.html",user=current_user,table=x.to_html(classes="table table-striped"))
+
+
+
+
+@views.route('/even_gen',methods=['POST'])
+@login_required
+def even_gen():
+    global df_sorted
+    df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
+    x=pd.DataFrame()
+    x=generatett()
+    return render_template("evening.html",user=current_user,table=x.to_html(classes="table table-striped"))
+
 
 
 @views.route('/evening',methods=['POST'])
 @login_required
 def evening():
     global df1,selected_choices,df_sorted,df,i
+    df1=pd.read_csv('../ffcs.csv')
     df1=df1[df1['Slot'].str.endswith('2')]
     df1=df1.reset_index(drop=True)
     df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
@@ -74,22 +91,24 @@ def evening():
     return render_template("evening.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
 def generatett():
-    global selected1, df_sorted, selected_choices, df, i
+    global selected1, df_sorted, selected_choices, df, i,df1
     sellen=len(selected_choices)
+    selc=selected_choices
     i+=1
     if i==25:
         return
     else:    
         selected1 = pd.DataFrame()        
-        while (selected_choices):
+        while (selc):
             first_entry = df_sorted.iloc[0]
             selected1 = pd.concat([selected1, pd.DataFrame([first_entry])], ignore_index=True)
             df_sorted = df_sorted[(df_sorted['Course'] != first_entry['Course']) & (df_sorted['Slot'] != first_entry['Slot'])].reset_index(drop=True)
-            selected_choices = df_sorted['Course'].unique().tolist()
+            selc = df_sorted['Course'].unique().tolist()
 
+        df1 = df1[~df1['Name'].isin(selected1['Name'])].reset_index(drop=True)
+        df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
         if (len(selected1)==sellen):
-            return selected1
-        
+            return selected1    
 
 
 @views.route('/faculty')
