@@ -48,6 +48,8 @@ def morning():
     df1=pd.read_csv('../ffcs.csv')
     df1=df1[df1['Slot'].str.endswith('1')]
     df1=df1.reset_index(drop=True)
+    df=df1.copy()
+    df = df[df['Course'].isin(selected_choices)]
     df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
@@ -75,8 +77,6 @@ def even_gen():
     x=generatett()
     return render_template("evening.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
-
-
 @views.route('/evening',methods=['POST'])
 @login_required
 def evening():
@@ -84,6 +84,9 @@ def evening():
     df1=pd.read_csv('../ffcs.csv')
     df1=df1[df1['Slot'].str.endswith('2')]
     df1=df1.reset_index(drop=True)
+    df=df1.copy()
+    df = df[df['Course'].isin(selected_choices)]
+    df=df.reset_index(drop=True)
     df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
@@ -96,7 +99,7 @@ def generatett():
     selc=selected_choices
     i+=1
     if i==25:
-        return
+        return -9999
     else:    
         selected1 = pd.DataFrame()        
         while (selc):
@@ -109,7 +112,22 @@ def generatett():
         df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
         if (len(selected1)==sellen):
             return selected1    
-
+        else:
+            selected_entries = []
+            selected_courses = set()
+            selected_slots = set()
+            for _, row in df.iterrows():
+                course = row['Course']
+                slot = row['Slot']    
+                if course not in selected_courses and slot not in selected_slots:
+                    selected_entries.append(row)
+                    selected_courses.add(course)
+                    selected_slots.add(slot)
+                    if len(selected_entries) == 7:
+                        break
+            selected_df = pd.DataFrame(selected_entries)
+            selected_df = selected_df.sample(frac=1).reset_index(drop=True)
+            return selected_df
 
 @views.route('/faculty')
 @login_required
