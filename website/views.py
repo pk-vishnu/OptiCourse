@@ -11,6 +11,7 @@ views = Blueprint('views', __name__)
 selected_choices=[]
 df = pd.read_csv('../ffcs.csv')
 df1=pd.read_csv('../ffcs.csv')
+dfkek=df.copy()
 i=0
 df_sorted = df.sort_values(by='Rating', ascending=False).reset_index(drop=True)
 @views.route('/')
@@ -21,9 +22,12 @@ def home():
 @views.route('/ffcsgen')
 @login_required
 def ffcsgen():
-    global df 
-    courses12=df['Course'].unique()
-    courses1=courses12[:-1]
+    global df,dfkek
+    courses12=dfkek['Course'].unique()
+    kek=1
+    if kek==1:
+        courses1=courses12[:-1]
+        kek+=1
     return render_template("ffcsgen.html",user=current_user,courses1=courses1)
 
 
