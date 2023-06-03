@@ -1,11 +1,18 @@
-from flask import Flask,Blueprint,render_template,session,request
+from flask import Flask,Blueprint,render_template,session,request,redirect,url_for
 from flask_login import login_required, current_user
+import pandas as pd
+
+
+
 
 views = Blueprint('views', __name__)
 
 
 selected_choices=[]
-
+df = pd.read_csv('../ffcs.csv')
+df1=pd.read_csv('../ffcs.csv')
+i=0
+df_sorted = df.sort_values(by='Rating', ascending=False).reset_index(drop=True)
 @views.route('/')
 def home():
     return render_template("home.html",user=current_user)
@@ -14,14 +21,27 @@ def home():
 @views.route('/ffcsgen')
 @login_required
 def ffcsgen():
-    import pandas as pd
-    df = pd.read_csv('ffcs.csv')
-    df1=pd.read_csv('ffcs.csv')
-    courses1=df1['Course'].unique()
+    global df1 
+    courses12=df1['Course'].unique()
+    courses1=courses12[:-1]
     return render_template("ffcsgen.html",user=current_user,courses1=courses1)
 
-@views.route('/process_form', methods=['POST'])
+
+
+@views.route('/course', methods=['POST'])
 @login_required
-def process_form():
+def course():
+    global selected_choices
     selected_choices = request.form.getlist('selected_choices')
-    return f"Selected Choices: {selected_choices}"
+    return redirect(url_for('views.time'))
+
+
+@views.route('/time')
+@login_required
+def time():
+    return render_template("time.html",user=current_user,selected_choices=selected_choices)
+
+@views.route('/morning', methods=['POST'])
+@login_required
+def morning():
+    return render_template("morning.html",user=current_user,selected_choices=selected_choices)

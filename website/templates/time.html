@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}FFCSGEN{% endblock %}
+
+{% block content %}
+
+<br><br><br>
+<div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h2>FFCS Generator v2.0</h2>
+      <p>loading...</p>
+    </div>
+ 
+
+<br><br><br>		
+	<div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div  class="text-center">
+                    <form action="/morning" method="POST">
+					<button type="button" class="btn btn-warning btn-lg btn-block"><i class="bi-brightness-high"></i> Morning Theory</button>
+                    </form>
+
+					<button type="button" class="btn btn-primary btn-lg btn-block"><i class="bi-brightness-alt-high-fill"></i> Evening Theory</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
