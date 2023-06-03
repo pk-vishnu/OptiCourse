@@ -12,6 +12,8 @@
     <div class="container mt-4">
         {{ table | safe }}
     </div>
-
-
+    <div  class="text-center">
+    <form action="/morn_gen" method="POST">
+    <button type="submit" class="btn btn-warning btn-lg btn-block"><i class="bi-brightness-high"></i> Generate More</button><br><br>
+    </form>
 {% endblock %}

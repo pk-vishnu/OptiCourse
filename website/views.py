@@ -53,6 +53,14 @@ def morning():
     x=generatett()
     return render_template("morning.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
+@views.route('/morn_gen',methods=['POST'])
+@login_required
+def morn_gen():
+    x=pd.DataFrame()
+    x=generatett()
+    return render_template("morning.html",user=current_user,table=x.to_html(classes="table table-striped"))
+
+
 @views.route('/evening',methods=['POST'])
 @login_required
 def evening():
@@ -81,3 +89,12 @@ def generatett():
 
         if (len(selected1)==sellen):
             return selected1
+        
+
+
+@views.route('/faculty')
+@login_required
+def faculty():
+    df = pd.read_csv("../ffcs.csv")
+    faculty = df["Name"].tolist()
+    return render_template("faculty.html",user=current_user,faculty=faculty)
