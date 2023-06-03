@@ -51,7 +51,7 @@ def morning():
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
     x=generatett()
-    return render_template("morning.html",user=current_user,x=x)
+    return render_template("morning.html",user=current_user,table=x.to_html(classes="table table-striped"))
 
 @views.route('/evening',methods=['POST'])
 @login_required
