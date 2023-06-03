@@ -49,7 +49,7 @@
 
     </div>
   </header>
-  <br><br><br><br>
+  <div>
   {% with messages = get_flashed_messages(with_categories=true) %}
   {% if messages %}
       {% for category, message in messages %} 
@@ -67,7 +67,7 @@
       {% endfor %}
   {% endif %}
 {% endwith %}
-
+</div>
 {% block content %}  {% endblock %}
 
   <footer id="footer" class="footer">
