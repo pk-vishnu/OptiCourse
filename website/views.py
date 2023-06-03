@@ -51,9 +51,20 @@ def morning():
     df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
     df_sorted=df_sorted.reset_index(drop=True)
     x=generatett()
-
-
     return render_template("morning.html",user=current_user,x=x)
+
+@views.route('/evening',methods=['POST'])
+@login_required
+def evening():
+    global df1,selected_choices,df_sorted,df,i
+    df1=df1[df1['Slot'].str.endswith('2')]
+    df1=df1.reset_index(drop=True)
+    df_sorted = df1.sort_values(by='Rating', ascending=False).reset_index(drop=True)
+    df_sorted = df_sorted[df_sorted['Course'].isin(selected_choices)]
+    df_sorted=df_sorted.reset_index(drop=True)
+    x=generatett()
+    return render_template("evening.html",user=current_user,x=x)
+
 def generatett():
     global selected1, df_sorted, selected_choices, df, i
     sellen=len(selected_choices)
